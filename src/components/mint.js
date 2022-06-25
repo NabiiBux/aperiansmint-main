@@ -231,7 +231,7 @@ const Mint = () => {
                 )}
               </Button>
             </div>
-            <div className="mint-status text-center"> 3086 {} / 9001</div>
+            <div className="mint-status text-center"> {supply}086 / 9001</div>
             <div className="df jcc">
               <Button
                 className="mint-btn"
