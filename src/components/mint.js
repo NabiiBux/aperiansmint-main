@@ -9,7 +9,7 @@ import Form from "react-bootstrap/Form";
 
 const alchemyKey = process.env.REACT_APP_ALCHEMY_KEY;
 const contractABI = require("../contract-abi.json");
-const contractAddress = "  0xF9fC419822320D75a6BABae48721846516232cf7 ";
+const contractAddress = "0xe3e2f47ddd108c8dB53322d2e19F198d34450DF8";
 const { createAlchemyWeb3 } = require("@alch/alchemy-web3");
 const web3 = createAlchemyWeb3(alchemyKey);
 const contract = new web3.eth.Contract(contractABI, contractAddress);
@@ -231,7 +231,7 @@ const Mint = () => {
                 )}
               </Button>
             </div>
-            <div className="mint-status text-center"> {supply}086 / 9001</div>
+            <div className="mint-status text-center"> {supply} / 9001</div>
             <div className="df jcc">
               <Button
                 className="mint-btn"
